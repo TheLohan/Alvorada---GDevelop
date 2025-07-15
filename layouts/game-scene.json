@@ -303,6 +303,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Jellyfish",
+      "persistentUuid": "4b10ee48-9e2a-4427-9722-918451542f07",
+      "width": 0,
+      "x": 792,
+      "y": 322,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -368,11 +384,11 @@
           "IsCalledManually": false
         },
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "rotateObject": false,
           "angleOffset": 90,
           "angularMaxSpeed": 360,
-          "name": "TopDownMovement",
-          "rotateObject": true,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 450,
           "deceleration": 900,
           "maxSpeed": 125,
@@ -457,7 +473,14 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "cost": 2,
+          "impassable": true,
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -685,6 +708,48 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Inimigo"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Jellyfish",
+            "TopDown_Character",
+            "100",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "Jellyfish",
+            "Pathfinding",
+            "",
+            "TopDown_Character.X()",
+            "TopDown_Character.Y()"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -750,6 +815,14 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
+      "name": "PathfindingObstacle",
+      "type": "PathfindingBehavior::PathfindingObstacleBehavior"
     },
     {
       "name": "Resizable",
