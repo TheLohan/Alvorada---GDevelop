@@ -643,27 +643,18 @@
           "value": "1",
           "type": "Number",
           "label": "Value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "CurrentValue"
         },
         {
           "value": "3",
           "type": "Number",
           "label": "Maximum value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MaxValue"
         },
         {
           "value": "",
           "type": "Number",
           "label": "Previous high value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "PreviousHighValue"
         },
@@ -671,9 +662,6 @@
           "value": "1",
           "type": "Number",
           "label": "Previous high value conservation duration (in seconds)",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "PreviousHighValueDuration"
         }
       ],
@@ -1588,9 +1576,6 @@
           "type": "Number",
           "unit": "Dimensionless",
           "label": "Maximum value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "MaxValue"
         },
         {
@@ -1598,9 +1583,6 @@
           "type": "Number",
           "unit": "Dimensionless",
           "label": "Initial value",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "InitialValue"
         },
         {
@@ -1608,8 +1590,6 @@
           "type": "Number",
           "label": "",
           "description": "It's used to detect a change at hot reload.",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "PreviousInitialValue"
         },
@@ -1619,16 +1599,12 @@
           "unit": "Pixel",
           "label": "Unit width",
           "description": "How much pixels to show for a value of 1.",
-          "group": "",
-          "extraInformation": [],
           "name": "UnitWidth"
         },
         {
           "value": "true",
           "type": "Boolean",
           "label": "Show the background",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "Background"
           ],
@@ -1639,8 +1615,6 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Bar left margin",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "FillBar",
             "Bar"
@@ -1652,8 +1626,6 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Bar right margin",
-          "description": "",
-          "group": "",
           "extraInformation": [
             "FillBar",
             "Bar"
@@ -1665,7 +1637,6 @@
           "type": "String",
           "label": "",
           "description": "Only used by the scene editor.",
-          "group": "",
           "extraInformation": [
             "FillBar",
             "Bar"
@@ -1678,7 +1649,6 @@
           "type": "String",
           "label": "",
           "description": "Only used by the scene editor.",
-          "group": "",
           "extraInformation": [
             "Background"
           ],
