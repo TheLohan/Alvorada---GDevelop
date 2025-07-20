@@ -18386,6 +18386,46 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Pixel art RPG Items/Weapons/b3f4994962853980db014e781c7cad8cd98b8553957d42ed47b6bc3b0818d325_Crossbow.png",
           "name": "Crossbow.png"
         }
+      },
+      {
+        "file": "assets/Health_01.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Health_01.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Health_01.png3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Health_01.png3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Health_01.png4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Health_01.png4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Health_03.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Health_03.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -75700,45 +75740,46 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "PreviousHighValueDuration": 1,
-        "InitialValue": 4,
-        "MaxValue": 8,
+        "PreviousHighValueDuration": 0.3,
+        "InitialValue": 0,
+        "MaxValue": 0,
         "BarTopPadding": 0,
         "BarLeftPadding": 0,
         "BarBottomPadding": 0,
         "BarRightPadding": 0,
-        "ShowLabel": false
+        "ShowLabel": false,
+        "EasingDuration": 0
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 9,
-          "height": 16,
-          "leftMargin": 16,
-          "rightMargin": 3,
-          "texture": "Health_01.png",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Health_01.png4",
           "tiled": false,
-          "topMargin": 5,
-          "width": 64
+          "topMargin": 0,
+          "width": 128
         },
         "Buffer": {
           "bottomMargin": 0,
-          "height": 16,
+          "height": 0,
           "leftMargin": 0,
           "rightMargin": 0,
           "texture": "Health_01_Bar02.png",
-          "tiled": true,
+          "tiled": false,
           "topMargin": 0,
-          "width": 64
+          "width": 0
         },
         "FillBar": {
           "bottomMargin": 0,
-          "height": 16,
+          "height": 32,
           "leftMargin": 0,
           "rightMargin": 0,
           "texture": "Health_01_Bar01.png",
-          "tiled": true,
+          "tiled": false,
           "topMargin": 0,
-          "width": 64
+          "width": 128
         },
         "Label": {
           "bold": false,
@@ -75993,25 +76034,26 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "PreviousHighValueDuration": 1,
-        "InitialValue": 4,
-        "MaxValue": 8,
+        "PreviousHighValueDuration": 0,
+        "InitialValue": 0,
+        "MaxValue": 0,
         "BarTopPadding": 0,
         "BarLeftPadding": 0,
         "BarBottomPadding": 0,
         "BarRightPadding": 0,
-        "ShowLabel": false
+        "ShowLabel": false,
+        "EasingDuration": 0
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 7,
-          "height": 16,
-          "leftMargin": 11,
-          "rightMargin": 11,
-          "texture": "Health_03.png",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Health_03.png2",
           "tiled": false,
-          "topMargin": 7,
-          "width": 64
+          "topMargin": 0,
+          "width": 120
         },
         "Buffer": {
           "bottomMargin": 0,
@@ -76019,28 +76061,28 @@
           "leftMargin": 0,
           "rightMargin": 0,
           "texture": "Health_03_Bar02.png",
-          "tiled": true,
+          "tiled": false,
           "topMargin": 0,
           "width": 64
         },
         "FillBar": {
           "bottomMargin": 0,
-          "height": 16,
+          "height": 32,
           "leftMargin": 0,
           "rightMargin": 0,
           "texture": "Health_03_Bar03.png",
           "tiled": true,
           "topMargin": 0,
-          "width": 64
+          "width": 128
         },
         "Label": {
           "bold": false,
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "8 / 16",
+          "string": "",
           "font": "",
-          "textAlignment": "center",
+          "textAlignment": "right",
           "characterSize": 14,
           "color": {
             "b": 255,
@@ -76057,13 +76099,13 @@
             "shadowAngle": 90,
             "shadowBlurRadius": 2,
             "shadowColor": "0;0;0",
-            "shadowDistance": 4,
+            "shadowDistance": 0,
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "8 / 16",
+            "text": "",
             "font": "",
-            "textAlignment": "center",
+            "textAlignment": "right",
             "verticalTextAlignment": "top",
             "characterSize": 14,
             "color": "255;255;255"
@@ -84574,7 +84616,18 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "PlayerMana",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "PlayerMaxMana",
+      "type": "number",
+      "value": 8
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
