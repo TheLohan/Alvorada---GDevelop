@@ -319,6 +319,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "magic",
+      "persistentUuid": "8189716e-a246-4470-b093-fee3b088ae66",
+      "width": 0,
+      "x": 1071,
+      "y": 611,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -331,6 +347,36 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.3,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
         {
           "name": "Flash",
           "type": "Flash::Flash",
@@ -454,11 +500,17 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\StartingPixelPlayer.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Magic",
+                      "x": 32.5,
+                      "y": 15.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -725,6 +777,151 @@
           ]
         }
       ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "9bcd118d1dbb41b22841370529ebb21fd76b3dde6cd916d15b5e3c0ffaf558c3",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 1,
+      "emitterForceMax": 600,
+      "emitterForceMin": 300,
+      "flow": 100,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 300,
+      "name": "RedFlame",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 40,
+      "particleBlue2": 0,
+      "particleColor1": "160;80;40",
+      "particleColor2": "128;0;0",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 80,
+      "particleGreen2": 0,
+      "particleLifeTimeMax": 0.5,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 160,
+      "particleRed2": 128,
+      "particleSize1": 200,
+      "particleSize2": 75,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 0,
+      "rendererParam2": 0,
+      "rendererType": "Quad",
+      "tank": -1,
+      "textureParticleName": "LightGlow.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 4,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "magic",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [
+                    {
+                      "name": "magicPoint",
+                      "x": 10.5,
+                      "y": 8
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 5
+                      },
+                      {
+                        "x": 16,
+                        "y": 5
+                      },
+                      {
+                        "x": 16,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -752,6 +949,12 @@
       },
       {
         "objectName": "Mana"
+      },
+      {
+        "objectName": "RedFlame"
+      },
+      {
+        "objectName": "magic"
       }
     ]
   },
@@ -821,77 +1024,141 @@
       "comment": "Inimigo"
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Inimigo",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "Distance"
-          },
-          "parameters": [
-            "Jellyfish",
-            "TopDown_Character",
-            "100",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PathfindingBehavior::SetDestination"
-          },
-          "parameters": [
-            "Jellyfish",
-            "Pathfinding",
-            "",
-            "TopDown_Character.X()",
-            "TopDown_Character.Y()"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Jellyfish",
-            "TopDown_Character",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Health::Health::Hit"
-          },
-          "parameters": [
-            "TopDown_Character",
-            "Health",
-            "1",
-            "",
-            "",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Jellyfish",
+                "TopDown_Character",
+                "100",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "Jellyfish",
+                "Pathfinding",
+                "",
+                "TopDown_Character.X()",
+                "TopDown_Character.Y()"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "Flash::Flash::Flash"
-          },
-          "parameters": [
-            "TopDown_Character",
-            "Flash",
-            "0.3",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Jellyfish",
+                "TopDown_Character",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Health",
+                "1",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Flash",
+                "0.3",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "FireBall",
+                "Jellyfish",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "FireBall",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Jellyfish",
+                "Health",
+                "2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "Jellyfish",
+                "Flash",
+                "0.2",
+                ""
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Comment",
@@ -918,136 +1185,321 @@
       "comment": "Player Health/Mana"
     },
     {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "set up",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "magic",
+                    "=",
+                    "TopDown_Character.PointX(\"Magic\")",
+                    "=",
+                    "TopDown_Character.PointY(\"Magic\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RotateTowardPosition"
+                  },
+                  "parameters": [
+                    "magic",
+                    "CursorX()",
+                    "CursorY()",
+                    "0",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Player Health/Mana",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "HealthBarHorizontal",
+                    "10",
+                    "10",
+                    "\"HUD\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "TopDown_Character",
+                    "HealthBarHorizontal"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "HealthBarHorizontal",
+                    "Scale",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "ManaBarHorizontal2",
+                    "HealthBarHorizontal.X()",
+                    "HealthBarHorizontal.Y()+56",
+                    "\"HUD\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ManaBarHorizontal2",
+                    "Scale",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Mana",
+                    "ManaBarHorizontal2.X()+40",
+                    "ManaBarHorizontal2.Y()-10",
+                    "\"HUD\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Mana",
+                    "Scale",
+                    "=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "ManaBarHorizontal2",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Mana",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "TopDown_Character",
+                    "Mana"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerMana",
+                    "=",
+                    "PlayerMaxMana"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "HealthBarHorizontal",
+                    "TopDown_Character",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "HealthBarHorizontal",
+                    "=",
+                    "TopDown_Character.Health::MaxHealth()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "HealthBarHorizontal",
+                    "=",
+                    "TopDown_Character.Health::Health()",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "Mana",
+                    "TopDown_Character",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                  },
+                  "parameters": [
+                    "Mana",
+                    "Resizable",
+                    "=",
+                    "(PlayerMana/PlayerMaxMana)*176"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Magic/Projetil"
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "DepartScene"
+            "value": "MouseButtonFromTextPressed"
           },
           "parameters": [
-            ""
+            "",
+            "\"Left\""
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "Create"
+            "value": "FireBullet::FireBullet::Fire"
           },
           "parameters": [
-            "",
-            "HealthBarHorizontal",
-            "10",
-            "10",
-            "\"HUD\""
+            "magic",
+            "FireBullet",
+            "magic.PointX(\"magicPoint\")",
+            "magic.PointY(\"magicPoint\")",
+            "FireBall",
+            "magic.Angle()",
+            "100",
+            ""
           ]
-        },
+        }
+      ],
+      "events": [
         {
-          "type": {
-            "value": "LinkedObjects::LinkObjects"
-          },
-          "parameters": [
-            "",
-            "TopDown_Character",
-            "HealthBarHorizontal"
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "HealthBarHorizontal",
-            "Scale",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "ManaBarHorizontal2",
-            "HealthBarHorizontal.X()",
-            "HealthBarHorizontal.Y()+56",
-            "\"HUD\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "ManaBarHorizontal2",
-            "Scale",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Mana",
-            "ManaBarHorizontal2.X()+40",
-            "ManaBarHorizontal2.Y()-10",
-            "\"HUD\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "Mana",
-            "Scale",
-            "=",
-            "10"
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangePlan"
-          },
-          "parameters": [
-            "ManaBarHorizontal2",
-            "=",
-            "5"
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangePlan"
-          },
-          "parameters": [
-            "Mana",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "LinkedObjects::LinkObjects"
-          },
-          "parameters": [
-            "",
-            "TopDown_Character",
-            "Mana"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "PlayerMana",
-            "=",
-            "PlayerMaxMana"
-          ]
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ]
     },
@@ -1056,12 +1508,13 @@
       "conditions": [
         {
           "type": {
-            "value": "LinkedObjects::PickObjectsLinkedTo"
+            "inverted": true,
+            "value": "Distance"
           },
           "parameters": [
-            "",
-            "HealthBarHorizontal",
+            "FireBall",
             "TopDown_Character",
+            "200",
             ""
           ]
         }
@@ -1069,53 +1522,11 @@
       "actions": [
         {
           "type": {
-            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+            "value": "Delete"
           },
           "parameters": [
-            "HealthBarHorizontal",
-            "=",
-            "TopDown_Character.Health::MaxHealth()",
+            "FireBall",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-          },
-          "parameters": [
-            "HealthBarHorizontal",
-            "=",
-            "TopDown_Character.Health::Health()",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "LinkedObjects::PickObjectsLinkedTo"
-          },
-          "parameters": [
-            "",
-            "Mana",
-            "TopDown_Character",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResizableCapability::ResizableBehavior::SetWidth"
-          },
-          "parameters": [
-            "Mana",
-            "Resizable",
-            "=",
-            "(PlayerMana/PlayerMaxMana)*176"
           ]
         }
       ]
@@ -1225,6 +1636,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flash",
