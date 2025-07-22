@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.172622963817773,
+    "zoomFactor": 0.8700232859857361,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -325,6 +325,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "melee",
+      "persistentUuid": "ea482d57-73a6-4e8c-8bbf-56376d1278e6",
+      "width": 0,
+      "x": 1092,
+      "y": 612,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -455,9 +471,10 @@
           "IsCalledManually": false
         },
         {
-          "ignoreDefaultControls": false,
+          "allowDiagonals": false,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "ignoreDefaultControls": false,
           "useLegacyTurnBack": false,
           "rotateObject": false,
           "angleOffset": 90,
@@ -465,7 +482,6 @@
           "acceleration": 450,
           "deceleration": 900,
           "maxSpeed": 125,
-          "allowDiagonals": true,
           "customIsometryAngle": 30,
           "movementAngleOffset": 0,
           "viewpoint": "TopDown"
@@ -1664,6 +1680,104 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "melee",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [
+                    {
+                      "name": "melee",
+                      "x": 15,
+                      "y": 7.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 8,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 5
+                      },
+                      {
+                        "x": 16,
+                        "y": 5
+                      },
+                      {
+                        "x": 16,
+                        "y": 10
+                      },
+                      {
+                        "x": 0,
+                        "y": 10
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1689,6 +1803,9 @@
       },
       {
         "objectName": "magic"
+      },
+      {
+        "objectName": "melee"
       },
       {
         "objectName": "SlashAttack"
@@ -2013,6 +2130,30 @@
                   },
                   "parameters": [
                     "magic",
+                    "CursorX()",
+                    "CursorY()",
+                    "0",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "melee",
+                    "=",
+                    "TopDown_Character.PointX(\"Magic\")",
+                    "=",
+                    "TopDown_Character.PointY(\"Magic\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RotateTowardPosition"
+                  },
+                  "parameters": [
+                    "melee",
                     "CursorX()",
                     "CursorY()",
                     "0",
@@ -2562,10 +2703,10 @@
           "parameters": [
             "TopDown_Character",
             "FireBullet",
-            "TopDown_Character.X()",
-            "TopDown_Character.Y()",
+            "melee.X(\"melee\")",
+            "melee.Y(\"melee\")",
             "Slash",
-            "TopDown_Character.Angle()",
+            "melee.Angle()",
             "300",
             ""
           ]
