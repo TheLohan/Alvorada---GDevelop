@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.172622963817773,
+    "zoomFactor": 1.7458023987467939,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -455,9 +455,9 @@
           "IsCalledManually": false
         },
         {
-          "ignoreDefaultControls": false,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "ignoreDefaultControls": false,
           "useLegacyTurnBack": false,
           "rotateObject": false,
           "angleOffset": 90,
@@ -1565,7 +1565,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        }
+      ],
       "animations": [
         {
           "name": "No Shadow",
@@ -2541,7 +2549,7 @@
       ]
     },
     {
-      "aiGeneratedEventId": "01K0QYF913BWW7GSYTKKA0PRTH",
+      "aiGeneratedEventId": "01K0R0C16ZYRRK1BQN2RE5T75V",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2565,34 +2573,9 @@
             "TopDown_Character.X()",
             "TopDown_Character.Y()",
             "Slash",
-            "TopDown_Character.Angle()",
+            "ActiveAngle",
             "300",
             ""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "SlashAttack",
-                ""
-              ]
-            }
           ]
         }
       ]
@@ -2649,6 +2632,132 @@
           "parameters": [
             "Slash",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01K0R01RA3TC6R6SWBWNHCBTSZ",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::IsMoving"
+          },
+          "parameters": [
+            "TopDown_Character",
+            "TopDownMovement"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ActiveAngle",
+                "=",
+                "270"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ActiveAngle",
+                "=",
+                "90"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ActiveAngle",
+                "=",
+                "180"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ActiveAngle",
+                "=",
+                "0"
+              ]
+            }
           ]
         }
       ]
