@@ -18458,6 +18458,174 @@
         "name": "NewSprite2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Dorivan.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dorivan.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile000.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile009.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile010.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile011.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile007.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "SFX301_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SFX301_01.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "SFX301_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SFX301_02.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "SFX301_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SFX301_03.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "SFX301_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SFX301_04.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "SFX301_05.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SFX301_05.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Lightning Attack_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lightning Attack_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Special Moves/016360cbd5913fcbf60dc2fd24ecb4b23ecc65bc652be93e91d8ba39e51ec17e_Lightning Attack_No Shadow.png",
+          "name": "Lightning Attack_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Lightning Attack_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lightning Attack_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Special Moves/bced30f206d8359ac45fca9fa798e262b54e289afa7a445e11972aed488ee837_Lightning Attack_Shadow.png",
+          "name": "Lightning Attack_Shadow.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -45434,7 +45602,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "b284787c223dba0d131d4a86f2676beaed0c0bcd2e86944e153f704f015cdea0",
-      "name": "FireBurst",
+      "name": "Slash",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -45447,11 +45615,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.0345,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_1.png",
+                  "image": "SFX301_01.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -45467,27 +45635,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 43
+                        "x": 5,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 43
+                        "x": 24,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 63
+                        "x": 24,
+                        "y": 24
                       },
                       {
-                        "x": 21,
-                        "y": 63
+                        "x": 5,
+                        "y": 24
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_2.png",
+                  "image": "SFX301_02.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -45503,27 +45671,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 43
+                        "x": 5,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 43
+                        "x": 24,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 63
+                        "x": 24,
+                        "y": 24
                       },
                       {
-                        "x": 21,
-                        "y": 63
+                        "x": 5,
+                        "y": 24
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_3.png",
+                  "image": "SFX301_03.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -45539,27 +45707,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 43
+                        "x": 5,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 43
+                        "x": 24,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 63
+                        "x": 24,
+                        "y": 24
                       },
                       {
-                        "x": 21,
-                        "y": 63
+                        "x": 5,
+                        "y": 24
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_4.png",
+                  "image": "SFX301_04.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -45575,27 +45743,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 43
+                        "x": 5,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 43
+                        "x": 24,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 63
+                        "x": 24,
+                        "y": 24
                       },
                       {
-                        "x": 21,
-                        "y": 63
+                        "x": 5,
+                        "y": 24
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_5.png",
+                  "image": "SFX301_05.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -45611,884 +45779,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 21,
-                        "y": 43
+                        "x": 5,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 43
+                        "x": 24,
+                        "y": 12
                       },
                       {
-                        "x": 42,
-                        "y": 63
+                        "x": 24,
+                        "y": 24
                       },
                       {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_7.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_8.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_9.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_10.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_11.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_12.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_13.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_14.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_15.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_16.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_17.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_18.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_19.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_20.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_21.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_22.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_23.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_24.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_25.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_26.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_27.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_28.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Fire Burst_29.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 21,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 43
-                      },
-                      {
-                        "x": 42,
-                        "y": 63
-                      },
-                      {
-                        "x": 21,
-                        "y": 63
+                        "x": 5,
+                        "y": 24
                       }
                     ]
                   ]
@@ -83947,7 +83251,7 @@
         "objectName": "IceCast"
       },
       {
-        "objectName": "FireBurst"
+        "objectName": "Slash"
       },
       {
         "objectName": "IcePick"

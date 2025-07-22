@@ -18,11 +18,17 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9296875000000069,
+    "zoomFactor": 1.172622963817773,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "LastDirection",
+      "type": "string",
+      "value": "down"
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -257,22 +263,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "MobileControls",
-      "name": "Joystick",
-      "persistentUuid": "b0c31bb4-0add-4dda-9367-c5136e4b118d",
-      "width": 0,
-      "x": 176,
-      "y": 576,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 0.5,
       "height": 64,
@@ -339,7 +329,7 @@
   ],
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": false,
+      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "TopDown_Character",
       "type": "Sprite",
@@ -465,8 +455,10 @@
           "IsCalledManually": false
         },
         {
+          "ignoreDefaultControls": false,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "useLegacyTurnBack": false,
           "rotateObject": false,
           "angleOffset": 90,
           "angularMaxSpeed": 360,
@@ -475,36 +467,27 @@
           "maxSpeed": 125,
           "allowDiagonals": true,
           "customIsometryAngle": 30,
-          "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
           "viewpoint": "TopDown"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-          "TopDownMovement": "TopDownMovement",
-          "ControllerIdentifier": 1,
-          "JoystickIdentifier": "Primary",
-          "StickMode": "Analog"
         }
       ],
       "animations": [
         {
-          "name": "",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.12,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\StartingPixelPlayer.png",
+                  "hasCustomCollisionMask": true,
+                  "image": "tile000.png",
                   "points": [
                     {
-                      "name": "Magic",
-                      "x": 32.5,
-                      "y": 15.5
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
                     }
                   ],
                   "originPoint": {
@@ -513,12 +496,745 @@
                     "y": 16
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 16
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile001.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile002.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile009.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile010.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile011.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile003.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile004.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile005.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.12,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile006.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile007.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile008.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "upIdle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile009.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "downIdle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile001.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "leftIdle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile004.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rightIdle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile007.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 16,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 2
+                      },
+                      {
+                        "x": 29,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -634,88 +1350,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "e71bd69f896d6c7531b48c65ceb5da25071d4fbdeb518aeceecba8d21f34ed8d",
-      "name": "Joystick",
-      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
-      "variant": "",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {},
-      "childrenContent": {
-        "Border": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Flat dark joystick border.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "Thumb": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Flat dark joystick thumb.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -922,6 +1556,114 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "eb8c8105a24523e76f110e83822d5409f53e13a6111ad8baae881221b6158497",
+      "name": "SlashAttack",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "No Shadow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Lightning Attack_No Shadow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 29,
+                        "y": 3
+                      },
+                      {
+                        "x": 29,
+                        "y": 29
+                      },
+                      {
+                        "x": 3,
+                        "y": 29
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shadow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Lightning Attack_Shadow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 29,
+                        "y": 3
+                      },
+                      {
+                        "x": 29,
+                        "y": 29
+                      },
+                      {
+                        "x": 3,
+                        "y": 29
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -940,14 +1682,6 @@
         "objectName": "Plant"
       },
       {
-        "folderName": "Mobile Controls",
-        "children": [
-          {
-            "objectName": "Joystick"
-          }
-        ]
-      },
-      {
         "objectName": "Mana"
       },
       {
@@ -955,6 +1689,9 @@
       },
       {
         "objectName": "magic"
+      },
+      {
+        "objectName": "SlashAttack"
       }
     ]
   },
@@ -1124,13 +1861,56 @@
           "actions": [
             {
               "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Jellyfish",
+                "Health",
+                "2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "Jellyfish",
+                "Flash",
+                "0.2",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
                 "FireBall",
                 ""
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Slash",
+                "Jellyfish",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "Health::Health::Hit"
@@ -1141,6 +1921,15 @@
                 "2",
                 "",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Slash",
                 ""
               ]
             },
@@ -1234,6 +2023,254 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "aiGeneratedEventId": "01K0QYNABC6CZGAFB3AQG6Z7C7",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "TopDown_Character.TopDownMovement::YVelocity()",
+                "<",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Animation",
+                "=",
+                "\"up\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"up\""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01K0QYNABC6CZGAFB3AQG6Z7C7",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "TopDown_Character.TopDownMovement::YVelocity()",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Animation",
+                "=",
+                "\"down\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"down\""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01K0QYNABC6CZGAFB3AQG6Z7C7",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "TopDown_Character.TopDownMovement::XVelocity()",
+                "<",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Animation",
+                "=",
+                "\"left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"left\""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01K0QYNABC6CZGAFB3AQG6Z7C7",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "TopDown_Character.TopDownMovement::XVelocity()",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Animation",
+                "=",
+                "\"right\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "LastDirection",
+                "=",
+                "\"right\""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01K0QYNABC6CZGAFB3AQG6Z7C7",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "TopDownMovement"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Animation",
+                "=",
+                "LastDirection"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "TopDownMovement"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "Animation",
+                "=",
+                "LastDirection+\"Idle\""
+              ]
+            }
+          ]
         },
         {
           "colorB": 228,
@@ -1474,7 +2511,7 @@
           },
           "parameters": [
             "",
-            "\"Left\""
+            "\"Right\""
           ]
         }
       ],
@@ -1504,6 +2541,63 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01K0QYF913BWW7GSYTKKA0PRTH",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::Fire"
+          },
+          "parameters": [
+            "TopDown_Character",
+            "FireBullet",
+            "TopDown_Character.X()",
+            "TopDown_Character.Y()",
+            "Slash",
+            "TopDown_Character.Angle()",
+            "300",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "SlashAttack",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1526,6 +2620,34 @@
           },
           "parameters": [
             "FireBall",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Distance"
+          },
+          "parameters": [
+            "Slash",
+            "TopDown_Character",
+            "35",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Slash",
             ""
           ]
         }
@@ -1680,10 +2802,6 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-    },
-    {
-      "name": "TopDownMultitouchMapper",
-      "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
     }
   ]
 }
