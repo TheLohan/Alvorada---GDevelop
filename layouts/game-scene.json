@@ -599,9 +599,9 @@
           "IsCalledManually": false
         },
         {
+          "allowDiagonals": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "allowDiagonals": false,
           "ignoreDefaultControls": false,
           "useLegacyTurnBack": false,
           "rotateObject": false,
@@ -2077,6 +2077,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Inimigo",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2302,6 +2303,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2862,6 +2864,16 @@
             "",
             "\"Right\""
           ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "PlayerMana",
+            ">=",
+            "2"
+          ]
         }
       ],
       "actions": [
@@ -2876,8 +2888,18 @@
             "magic.PointY(\"magicPoint\")",
             "FireBall",
             "magic.Angle()",
-            "100",
+            "200",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "PlayerMana",
+            "-",
+            "2"
           ]
         }
       ],
@@ -2918,6 +2940,16 @@
             "300",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "Slash",
+            "Flippable",
+            "yes"
+          ]
         }
       ],
       "events": [
@@ -2930,7 +2962,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "0.5"
+                "0.7"
               ]
             },
             {
@@ -3007,6 +3039,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Magic cura",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3335,7 +3368,7 @@
           "parameters": [
             "TopDown_Character",
             "magic.Angle()",
-            "5000",
+            "7000",
             ""
           ]
         },
