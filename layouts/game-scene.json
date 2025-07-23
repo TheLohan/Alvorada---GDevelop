@@ -2203,6 +2203,18 @@
                 "FireBall",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Flash::FlashColor::Flash"
+              },
+              "parameters": [
+                "Jellyfish",
+                "FlashColor",
+                "0.5",
+                "\"250;57;57\"",
+                ""
+              ]
             }
           ]
         },
@@ -3067,10 +3079,10 @@
                 "value": "OpacityCapability::OpacityBehavior::SetValue"
               },
               "parameters": [
-                "HolyExplosion",
+                "LightCast",
                 "Opacity",
                 "=",
-                "175"
+                "180"
               ]
             }
           ],
@@ -3383,6 +3395,10 @@
     {
       "name": "Flash",
       "type": "Flash::Flash"
+    },
+    {
+      "name": "FlashColor",
+      "type": "Flash::FlashColor"
     },
     {
       "name": "Flippable",
