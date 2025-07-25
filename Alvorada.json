@@ -18650,6 +18650,902 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Special Moves/a2be7de8174fefbb071cb0c3cc9c65db83adec0c3ec226f9fc6405b6eb956da5_Healing_Shadow.png",
           "name": "Healing_Shadow.png"
         }
+      },
+      {
+        "file": "Monsters_Creatures_Fantasy/Monsters_Creatures_Fantasy/Flying eye/Flight.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Monsters_Creatures_Fantasy/Monsters_Creatures_Fantasy/Flying eye/Flight.png\",\"extension\":\".png\"}",
+        "name": "Monsters_Creatures_Fantasy\\Monsters_Creatures_Fantasy\\Flying eye\\Flight.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite16",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite17",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite18",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Bringer-Of-Death/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_10.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Zombie_3/Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Zombie_3\\Idle.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite19",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite20",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite21",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite22",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite23",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite24",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite25",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite26",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite27",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite28",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite29",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite30",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite31",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite32",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite33.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite33",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite34.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite34",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite35",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite36",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite37",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite38",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite39",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite40",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite41.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite41",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite42.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite42",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite43.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite43",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

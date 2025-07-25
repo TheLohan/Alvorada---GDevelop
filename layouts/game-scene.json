@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8700232859857361,
+    "zoomFactor": 0.8416428125373177,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -599,9 +599,9 @@
           "IsCalledManually": false
         },
         {
-          "allowDiagonals": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "allowDiagonals": true,
           "ignoreDefaultControls": false,
           "useLegacyTurnBack": false,
           "rotateObject": false,
@@ -1956,6 +1956,4231 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "OlhoAberrante",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "voo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite4",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite5",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite6",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite7",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite8",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite9",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite10",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit2",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit3",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit4",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit5",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit6",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit7",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit8",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "death",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "death",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "death2",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "death3",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "death4",
+                  "points": [
+                    {
+                      "name": "attack",
+                      "x": 0,
+                      "y": 0
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 74.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 57,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 61
+                      },
+                      {
+                        "x": 98,
+                        "y": 92
+                      },
+                      {
+                        "x": 57,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FungoAberrante",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Correr",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite11",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite12",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite13",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite14",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite15",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite16",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite17",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite18",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FungoAberrante",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante9",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante10",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante11",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "FungoAberrante12",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 75,
+                    "y": 77.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 62,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 62
+                      },
+                      {
+                        "x": 87,
+                        "y": 98
+                      },
+                      {
+                        "x": 62,
+                        "y": 98
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Boss",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "parado",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Idle\\Bringer-of-Death_Idle_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Walk\\Bringer-of-Death_Walk_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ],
+                    [
+                      {
+                        "x": 34.5,
+                        "y": 86.5
+                      },
+                      {
+                        "x": 6,
+                        "y": 73
+                      },
+                      {
+                        "x": 10,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 71.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 102,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 59,
+                        "y": 81.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ],
+                    [
+                      {
+                        "x": 34.5,
+                        "y": 86.5
+                      },
+                      {
+                        "x": 6,
+                        "y": 73
+                      },
+                      {
+                        "x": 10,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 71.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 102,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 59,
+                        "y": 81.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ],
+                    [
+                      {
+                        "x": 34.5,
+                        "y": 86.5
+                      },
+                      {
+                        "x": 6,
+                        "y": 73
+                      },
+                      {
+                        "x": 10,
+                        "y": 44.5
+                      },
+                      {
+                        "x": 71.5,
+                        "y": 18
+                      },
+                      {
+                        "x": 102,
+                        "y": 24.5
+                      },
+                      {
+                        "x": 59,
+                        "y": 81.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Attack\\Bringer-of-Death_Attack_10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 86,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 38
+                      },
+                      {
+                        "x": 126,
+                        "y": 92
+                      },
+                      {
+                        "x": 86,
+                        "y": 92
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "magia",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Cast\\Bringer-of-Death_Cast_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "death",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.15,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bringer-Of-Death\\Bringer-Of-Death\\Individual Sprite\\Death\\Bringer-of-Death_Death_10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 107,
+                    "y": 58.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 106.5,
+                    "y": 58.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 102.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 47
+                      },
+                      {
+                        "x": 106.5,
+                        "y": 52.5
+                      },
+                      {
+                        "x": 102,
+                        "y": 52.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "zumbi",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "parado",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite19",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite20",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite21",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite22",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite23",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite24",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.15,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite25",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite26",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite27",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite28",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite29",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite30",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite31",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite32",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite33",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite34",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "attack",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.15,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite35",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite36",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite37",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite38",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "morto",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.15,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite39",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite40",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite41",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite42",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite43",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 63,
+                    "y": 89
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 46,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 62
+                      },
+                      {
+                        "x": 82,
+                        "y": 128
+                      },
+                      {
+                        "x": 46,
+                        "y": 128
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1990,6 +6215,18 @@
       },
       {
         "objectName": "SlashAttack"
+      },
+      {
+        "objectName": "OlhoAberrante"
+      },
+      {
+        "objectName": "FungoAberrante"
+      },
+      {
+        "objectName": "Boss"
+      },
+      {
+        "objectName": "zumbi"
       }
     ]
   },
@@ -2069,23 +6306,10 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Inimigo"
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Inimigo",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2283,30 +6507,6 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Player"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Player Health/Mana"
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -2316,6 +6516,187 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Slash",
+                "TopDown_Character",
+                "35",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Slash",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "FireBall",
+                "TopDown_Character",
+                "200",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "FireBall",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01K0R0C16ZYRRK1BQN2RE5T75V",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "FireBullet",
+                "melee.X(\"melee\")",
+                "melee.Y(\"melee\")",
+                "Slash",
+                "melee.Angle()",
+                "300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Slash",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.7"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "SlashAttack",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerMana",
+                ">=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "magic",
+                "FireBullet",
+                "magic.PointX(\"magicPoint\")",
+                "magic.PointY(\"magicPoint\")",
+                "FireBall",
+                "magic.Angle()",
+                "200",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerMana",
+                "-",
+                "2"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ]
+        },
         {
           "colorB": 228,
           "colorG": 176,
@@ -2850,199 +7231,6 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Magic/Projetil"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Right\""
-          ]
-        },
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "PlayerMana",
-            ">=",
-            "2"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::Fire"
-          },
-          "parameters": [
-            "magic",
-            "FireBullet",
-            "magic.PointX(\"magicPoint\")",
-            "magic.PointY(\"magicPoint\")",
-            "FireBall",
-            "magic.Angle()",
-            "200",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "PlayerMana",
-            "-",
-            "2"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ]
-    },
-    {
-      "aiGeneratedEventId": "01K0R0C16ZYRRK1BQN2RE5T75V",
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::Fire"
-          },
-          "parameters": [
-            "TopDown_Character",
-            "FireBullet",
-            "melee.X(\"melee\")",
-            "melee.Y(\"melee\")",
-            "Slash",
-            "melee.Angle()",
-            "300",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
-          },
-          "parameters": [
-            "Slash",
-            "Flippable",
-            "yes"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.7"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "SlashAttack",
-                ""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "Distance"
-          },
-          "parameters": [
-            "FireBall",
-            "TopDown_Character",
-            "200",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "FireBall",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "Distance"
-          },
-          "parameters": [
-            "Slash",
-            "TopDown_Character",
-            "35",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Slash",
-            ""
-          ]
-        }
-      ]
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -3333,112 +7521,114 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "magic dash",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [],
-      "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"LShift\""
-          ]
-        },
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "PlayerMana",
-            ">=",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "AddForceAL"
-          },
-          "parameters": [
-            "TopDown_Character",
-            "magic.Angle()",
-            "7000",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "PlayerMana",
-            "-",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Tornado",
-            "TopDown_Character.X()",
-            "TopDown_Character.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Tornado",
-            "Animation",
-            "=",
-            "\"Moving\""
-          ]
-        }
-      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "conditions": [
             {
               "type": {
-                "value": "Wait"
+                "value": "KeyFromTextPressed"
               },
               "parameters": [
-                "0.4"
+                "",
+                "\"LShift\""
               ]
             },
             {
               "type": {
-                "value": "Delete"
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "PlayerMana",
+                ">=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "TopDown_Character",
+                "magic.Angle()",
+                "7000",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "PlayerMana",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Tornado",
+                "TopDown_Character.X()",
+                "TopDown_Character.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
                 "Tornado",
-                ""
+                "Animation",
+                "=",
+                "\"Moving\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Tornado",
+                    ""
+                  ]
+                }
               ]
             }
           ]
         }
-      ]
+      ],
+      "parameters": []
     }
   ],
   "layers": [
