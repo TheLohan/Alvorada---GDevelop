@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 237,
+    "build": 238,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -19706,6 +19706,42 @@
         "name": "FungoAberrante16",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/9patch_sand_all_128.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "9patch_sand_all_128.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pirate Pack (190 assets)/PNG/Retina/Tiles/8706278e27df762d4137ed957e0068055303b663d2b0c2202dd89b3a4a551d1e_9patch_sand_all_128.png",
+          "name": "9patch_sand_all_128.png"
+        }
+      },
+      {
+        "file": "desert_.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desert_.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite52.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite52",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/No Shadow.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "No Shadow",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -23943,7 +23979,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.4,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        }
+      ],
       "animations": [
         {
           "name": "No Shadow",
@@ -23951,16 +23995,17 @@
           "directions": [
             {
               "looping": true,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Buff Arrow 1_No Shadow.png",
+                  "image": "No Shadow",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -23971,20 +24016,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 5,
-                        "y": 4
+                        "x": 4,
+                        "y": 5
                       },
                       {
-                        "x": 27,
-                        "y": 4
+                        "x": 28,
+                        "y": 5
                       },
                       {
-                        "x": 27,
-                        "y": 28
+                        "x": 28,
+                        "y": 27
                       },
                       {
-                        "x": 5,
-                        "y": 28
+                        "x": 4,
+                        "y": 27
                       }
                     ]
                   ]
@@ -24007,8 +24052,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -24019,20 +24064,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 5,
-                        "y": 4
+                        "x": 4,
+                        "y": 5
                       },
                       {
-                        "x": 27,
-                        "y": 4
+                        "x": 28,
+                        "y": 5
                       },
                       {
-                        "x": 27,
-                        "y": 28
+                        "x": 28,
+                        "y": 27
                       },
                       {
-                        "x": 5,
-                        "y": 28
+                        "x": 4,
+                        "y": 27
                       }
                     ]
                   ]
@@ -85055,12 +85100,31 @@
       "name": "ActiveAngle",
       "type": "string",
       "value": "right"
+    },
+    {
+      "name": "EnimiesScene",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "ActualHealth",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "ActualMana",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fase1"
     }
   ],
   "externalEvents": [],
