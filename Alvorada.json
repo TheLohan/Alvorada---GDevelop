@@ -19674,6 +19674,38 @@
         "name": "hit16",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FungoAberrante16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FungoAberrante16",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
