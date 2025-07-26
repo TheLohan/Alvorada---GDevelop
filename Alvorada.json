@@ -19546,6 +19546,134 @@
         "name": "NewSprite43",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite44",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite45.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite45",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite46.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite46",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite47.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite47",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite48",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite49",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite50",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite51.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite51",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit11",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit12",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit13",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit14",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit15",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hit16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hit16",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -84884,7 +85012,7 @@
     {
       "name": "PlayerMana",
       "type": "number",
-      "value": 0
+      "value": 8
     },
     {
       "name": "PlayerMaxMana",

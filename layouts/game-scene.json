@@ -469,6 +469,38 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "zumbi",
+      "persistentUuid": "c507b7f7-be0a-474b-acfb-e7ff3f571ce4",
+      "width": 0,
+      "x": 504,
+      "y": 121,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "OlhoAberrante",
+      "persistentUuid": "bb5808df-13e7-412f-83d0-8ae7a52be539",
+      "width": 0,
+      "x": 681,
+      "y": 268,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1965,7 +1997,97 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 2,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "acceleration": 50,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 50,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        }
+      ],
       "animations": [
         {
           "name": "voo",
@@ -1982,8 +2104,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2024,8 +2151,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2066,8 +2198,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2108,8 +2245,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2150,8 +2292,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2192,8 +2339,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2234,8 +2386,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2276,8 +2433,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2331,8 +2493,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2373,8 +2540,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2415,8 +2587,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2457,8 +2634,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2499,8 +2681,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2541,8 +2728,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2583,8 +2775,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2625,8 +2822,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2680,8 +2882,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2722,8 +2929,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2764,8 +2976,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2806,8 +3023,13 @@
                   "points": [
                     {
                       "name": "attack",
-                      "x": 0,
-                      "y": 0
+                      "x": 75.5,
+                      "y": 75.5
+                    },
+                    {
+                      "name": "atk",
+                      "x": 88,
+                      "y": 83
                     }
                   ],
                   "originPoint": {
@@ -2856,7 +3078,67 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 2,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 100,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 50,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        }
+      ],
       "animations": [
         {
           "name": "Correr",
@@ -3627,7 +3909,67 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 2,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 100,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 50,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        }
+      ],
       "animations": [
         {
           "name": "parado",
@@ -5226,7 +5568,67 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 1,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "acceleration": 50,
+          "maxSpeed": 50,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        }
+      ],
       "animations": [
         {
           "name": "parado",
@@ -6181,6 +6583,332 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "OlhoAtk",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "fire",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite44",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 37,
+                        "y": 35
+                      },
+                      {
+                        "x": 13,
+                        "y": 35.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite45",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 37,
+                        "y": 35
+                      },
+                      {
+                        "x": 13,
+                        "y": 35.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite46",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 36.5,
+                        "y": 13.5
+                      },
+                      {
+                        "x": 37,
+                        "y": 35
+                      },
+                      {
+                        "x": 13,
+                        "y": 35.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit12",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 6
+                      },
+                      {
+                        "x": 42.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 43,
+                        "y": 39.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 39.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit13",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 6
+                      },
+                      {
+                        "x": 42.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 43,
+                        "y": 39.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 39.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit14",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 6
+                      },
+                      {
+                        "x": 42.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 43,
+                        "y": 39.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 39.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit15",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 6
+                      },
+                      {
+                        "x": 42.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 43,
+                        "y": 39.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 39.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "hit16",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 6
+                      },
+                      {
+                        "x": 42.5,
+                        "y": 6
+                      },
+                      {
+                        "x": 43,
+                        "y": 39.5
+                      },
+                      {
+                        "x": 5.5,
+                        "y": 39.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -6218,6 +6946,9 @@
       },
       {
         "objectName": "OlhoAberrante"
+      },
+      {
+        "objectName": "OlhoAtk"
       },
       {
         "objectName": "FungoAberrante"
@@ -6302,6 +7033,26 @@
             "=",
             "ToString(PlayerMana)"
           ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "BluePotion",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "RedPotion",
+            "=",
+            "-1"
+          ]
         }
       ]
     },
@@ -6315,193 +7066,1104 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "base",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Jellyfish",
-                "TopDown_Character",
-                "100",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "TopDown_Character",
+                    "100",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "Pathfinding",
+                    "",
+                    "TopDown_Character.X()",
+                    "TopDown_Character.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "TopDown_Character",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Health",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Flash",
+                    "0.3",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "FireBall",
+                    "Jellyfish",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "Health",
+                    "2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "FireBall",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::FlashColor::Flash"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "FlashColor",
+                    "0.5",
+                    "\"250;57;57\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Slash",
+                    "Jellyfish",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "Health",
+                    "2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Slash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "PathfindingBehavior::SetDestination"
-              },
-              "parameters": [
-                "Jellyfish",
-                "Pathfinding",
-                "",
-                "TopDown_Character.X()",
-                "TopDown_Character.Y()"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Zumbi",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Jellyfish",
-                "TopDown_Character",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "TopDown_Character",
-                "Health",
-                "1",
-                "",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Scale",
+                    "-",
+                    "0.25"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Flash::Flash::Flash"
-              },
-              "parameters": [
-                "TopDown_Character",
-                "Flash",
-                "0.3",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "TopDown_Character",
+                    "200",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Pathfinding",
+                    "",
+                    "TopDown_Character.X()",
+                    "TopDown_Character.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Animation",
+                    "=",
+                    "\"walk\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "TopDown_Character",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Health",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Flash",
+                    "0.3",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "FireBall",
+                    "zumbi",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Health",
+                    "2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "FireBall",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::FlashColor::Flash"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "FlashColor",
+                    "0.5",
+                    "\"250;57;57\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Slash",
+                    "zumbi",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Health",
+                    "2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Slash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "TopDown_Character",
+                    "200",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Animation",
+                    "=",
+                    "\"parado\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "zumbi.X()",
+                    ">",
+                    "TopDown_Character.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "zumbi.X()",
+                    ">",
+                    "TopDown_Character.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Health",
+                    "<",
+                    "1",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::Speed"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Pathfinding",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "zumbi",
+                    "Animation",
+                    "=",
+                    "\"morto\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "zumbi",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Olho",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "FireBall",
-                "Jellyfish",
-                "",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"AtaqueOlho\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Animation",
+                    "=",
+                    "\"voo\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "TopDown_Character",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"AtaqueOlho\"",
+                    ">=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Animation",
+                    "=",
+                    "\"hit\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardObject"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "FireBullet",
+                    "OlhoAberrante.PointX(\"atk\")",
+                    "OlhoAberrante.PointY(\"atk\")",
+                    "OlhoAtk",
+                    "TopDown_Character",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "OlhoAtk",
+                    "Animation",
+                    "=",
+                    "\"hit\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"AtaqueOlho\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Animation",
+                    "=",
+                    "\"voo\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "OlhoAtk",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "TopDown_Character",
+                    "400",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Pathfinding",
+                    "",
+                    "TopDown_Character.X()",
+                    "TopDown_Character.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "TopDown_Character",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Health",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Flash",
+                    "0.3",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "FireBall",
+                    "OlhoAberrante",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Health",
+                    "2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "FireBall",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::FlashColor::Flash"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "FlashColor",
+                    "0.5",
+                    "\"250;57;57\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "OlhoAtk",
+                    "400",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "OlhoAtk",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "OlhoAtk",
+                    "TopDown_Character",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Health",
+                    "1",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Flash",
+                    "0.3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "OlhoAtk",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Slash",
+                    "OlhoAberrante",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Health",
+                    "2",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Slash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Health",
+                    "<",
+                    "1",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Animation",
+                    "=",
+                    "\"death\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "OlhoAberrante.X()",
+                    ">",
+                    "TopDown_Character.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "OlhoAberrante.X()",
+                    ">",
+                    "TopDown_Character.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    "Flippable",
+                    "no"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Jellyfish",
-                "Health",
-                "2",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Flash::Flash::Flash"
-              },
-              "parameters": [
-                "Jellyfish",
-                "Flash",
-                "0.2",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "FireBall",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Flash::FlashColor::Flash"
-              },
-              "parameters": [
-                "Jellyfish",
-                "FlashColor",
-                "0.5",
-                "\"250;57;57\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Slash",
-                "Jellyfish",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Jellyfish",
-                "Health",
-                "2",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Slash",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Flash::Flash::Flash"
-              },
-              "parameters": [
-                "Jellyfish",
-                "Flash",
-                "0.2",
-                ""
-              ]
-            }
-          ]
+          "parameters": []
         }
       ],
       "parameters": []
@@ -6511,7 +8173,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6584,6 +8245,12 @@
                 "",
                 "\"Left\""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -6660,6 +8327,12 @@
                 ">=",
                 "2"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -7387,6 +9060,16 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerMana",
+                    "<",
+                    "PlayerMaxMana"
+                  ]
                 }
               ],
               "actions": [
@@ -7434,6 +9117,16 @@
                     "",
                     "",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerMana",
+                    "<",
+                    "PlayerMaxMana"
                   ]
                 }
               ],
@@ -7483,6 +9176,18 @@
                     "RedPotion",
                     "",
                     "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "TopDown_Character",
+                    "Health",
+                    "<",
+                    "TopDown_Character.Health::MaxHealth()",
                     ""
                   ]
                 }
