@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Game Scene",
+  "firstLayout": "Menu",
   "gdVersion": {
     "build": 238,
     "major": 5,
@@ -19763,6 +19763,38 @@
         "kind": "image",
         "metadata": "",
         "name": "menu2.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "desert_demo_objects.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desert_demo_objects.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertTilemap16x16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DesertTilemap16x16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "DesertTilemapBlankBackground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DesertTilemapBlankBackground.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tileset_Dungeon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Tileset_Dungeon.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -85144,6 +85176,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fase2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fase3"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

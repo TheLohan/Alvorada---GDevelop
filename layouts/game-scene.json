@@ -1440,7 +1440,14 @@
       "type": "TileMap::SimpleTileMap",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "cost": 2,
+          "impassable": true,
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        }
+      ],
       "content": {
         "atlasImage": "assets\\StartingPixelGroundTilemap.png",
         "rowCount": 3,
@@ -1458,7 +1465,14 @@
       "width": 32,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [
+        {
+          "cost": 2,
+          "impassable": true,
+          "name": "PathfindingObstacle",
+          "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+        }
+      ]
     },
     {
       "adaptCollisionMaskAutomatically": false,
@@ -2088,7 +2102,9 @@
           "PercentDamageReduction": 0
         },
         {
+          "maxSpeed": 150,
           "name": "Pathfinding",
+          "rotateObject": false,
           "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 50,
           "allowDiagonals": true,
@@ -2099,8 +2115,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 50,
-          "rotateObject": false,
           "smoothingMaxCellGap": 1
         }
       ],
@@ -3139,10 +3153,11 @@
           "PercentDamageReduction": 0
         },
         {
+          "maxSpeed": 150,
           "name": "Pathfinding",
+          "rotateObject": false,
           "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 100,
-          "maxSpeed": 100,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -3151,7 +3166,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "rotateObject": false,
           "smoothingMaxCellGap": 1
         }
       ],
@@ -4087,7 +4101,9 @@
           "PercentDamageReduction": 0
         },
         {
+          "maxSpeed": 150,
           "name": "Pathfinding",
+          "rotateObject": false,
           "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 100,
           "allowDiagonals": true,
@@ -4098,8 +4114,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 50,
-          "rotateObject": false,
           "smoothingMaxCellGap": 1
         }
       ],
@@ -5746,10 +5760,11 @@
           "PercentDamageReduction": 0
         },
         {
+          "maxSpeed": 150,
           "name": "Pathfinding",
+          "rotateObject": false,
           "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 50,
-          "maxSpeed": 50,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -5758,7 +5773,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "rotateObject": false,
           "smoothingMaxCellGap": 1
         }
       ],
@@ -7122,6 +7136,43 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01K17AADJ4T6SCN3JSH81T78MH",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "TopDown_Character",
+            "Ground_Tilemap",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "TopDown_Character",
+            "Wall",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "TopDown_Character",
+            "Plant",
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
@@ -7203,6 +7254,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "base",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7432,6 +7484,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Zumbi",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7821,6 +7874,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Fungo",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8253,6 +8307,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Olho",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10124,6 +10179,130 @@
             "",
             "\"GameOver\"",
             "no"
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01K17DK7XJNNYMS49DVRFP0YPT",
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "OlhoAberrante",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "OlhoAberrante",
+            "Pathfinding",
+            "",
+            "TopDown_Character.X()",
+            "TopDown_Character.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "PathfindingBehavior::Speed"
+          },
+          "parameters": [
+            "OlhoAberrante",
+            "Pathfinding",
+            "=",
+            "100"
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01K17DK7XJNNYMS49DVRFP0YPT",
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "FungoAberrante",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "FungoAberrante",
+            "Pathfinding",
+            "",
+            "TopDown_Character.X()",
+            "TopDown_Character.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "PathfindingBehavior::Speed"
+          },
+          "parameters": [
+            "FungoAberrante",
+            "Pathfinding",
+            "=",
+            "100"
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01K17DK7XJNNYMS49DVRFP0YPT",
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "zumbi",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "zumbi",
+            "Pathfinding",
+            "",
+            "TopDown_Character.X()",
+            "TopDown_Character.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "PathfindingBehavior::Speed"
+          },
+          "parameters": [
+            "zumbi",
+            "Pathfinding",
+            "=",
+            "100"
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01K17DK7XJNNYMS49DVRFP0YPT",
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "Boss",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "Boss",
+            "Pathfinding",
+            "",
+            "TopDown_Character.X()",
+            "TopDown_Character.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "PathfindingBehavior::Speed"
+          },
+          "parameters": [
+            "Boss",
+            "Pathfinding",
+            "=",
+            "100"
           ]
         }
       ]
