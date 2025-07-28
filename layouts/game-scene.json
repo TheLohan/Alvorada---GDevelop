@@ -7194,7 +7194,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Inimigo",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7204,7 +7203,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "base",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7397,6 +7395,34 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    "Health",
+                    "<",
+                    "1",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Jellyfish",
+                    ""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -7406,7 +7432,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Zumbi",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8671,6 +8696,23 @@
                     "=",
                     "\"death\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.7"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "OlhoAberrante",
+                    ""
+                  ]
                 }
               ]
             },
@@ -8788,17 +8830,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "FireBall",
-                ""
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "aiGeneratedEventId": "01K0R0C16ZYRRK1BQN2RE5T75V",
@@ -8852,14 +8884,6 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "0.7"
-                  ]
-                },
                 {
                   "type": {
                     "value": "Delete"
@@ -10073,6 +10097,36 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "aiGeneratedEventId": "01K1769B2EFZNGHZCEZEENYCFK",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::Health"
+          },
+          "parameters": [
+            "TopDown_Character",
+            "Health",
+            "<=",
+            "0",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"GameOver\"",
+            "no"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

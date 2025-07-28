@@ -5594,9 +5594,9 @@
           "PercentDamageReduction": 0
         },
         {
-          "angularMaxSpeed": 0,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "angularMaxSpeed": 0,
           "acceleration": 50,
           "maxSpeed": 50,
           "allowDiagonals": true,

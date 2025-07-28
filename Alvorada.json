@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Game Scene",
   "gdVersion": {
     "build": 238,
     "major": 5,
@@ -19740,6 +19740,29 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "No Shadow",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "menu.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "menu.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Tormenta.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Tormenta.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "menu2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "menu2.jpg",
         "smoothed": false,
         "userAdded": false
       }
@@ -85125,6 +85148,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/fase1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/gameover"
     }
   ],
   "externalEvents": [],
